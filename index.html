@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sudoku Solver</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1 style="display: flex; flex-direction: column; align-items: center;">Sudoku Solver</h1>
+
+        <div id="sudoku">
+            <label style="display: flex; flex-direction: column; align-items: center;">Choose a Sudoku puzzle:</label>
+            <br><br>
+            <div class="photo-grid">
+                <div class="grid-container">
+                    <!-- Repeat this block 9 times -->
+                    <div class="photo-item">
+                        <input type="checkbox" id="photo1">
+                        <label for="photo1">
+                            <img src="sudoku_pics/easy1.png" alt="Photo 1">
+                        </label>
+                    </div>
+                    <div class="photo-item">
+                        <input type="checkbox" id="photo2">
+                        <label for="photo2">
+                            <img src="sudoku_pics/easy2.png" alt="Photo 2">
+                        </label>
+                    </div>
+                    <div class="photo-item">
+                        <input type="checkbox" id="photo3">
+                        <label for="photo3">
+                            <img src="sudoku_pics/easy3.png" alt="Photo 3">
+                        </label>
+                    </div>
+                    <div class="photo-item">
+                        <input type="checkbox" id="photo4">
+                        <label for="photo4">
+                            <img src="sudoku_pics/medium1.png" alt="Photo 4">
+                        </label>
+                    </div>
+                    <div class="photo-item">
+                        <input type="checkbox" id="photo5">
+                        <label for="photo5">
+                            <img src="sudoku_pics/medium2.png" alt="Photo 5">
+                        </label>
+                    </div>
+                    <div class="photo-item">
+                        <input type="checkbox" id="photo6">
+                        <label for="photo6">
+                            <img src="sudoku_pics/medium3.png" alt="Photo 6">
+                        </label>
+                    </div>
+                    <div class="photo-item">
+                        <input type="checkbox" id="photo7">
+                        <label for="photo7">
+                            <img src="sudoku_pics/hard1.png" alt="Photo 7">
+                        </label>
+                    </div>
+                    <div class="photo-item">
+                        <input type="checkbox" id="photo8">
+                        <label for="photo8">
+                            <img src="sudoku_pics/hard2.png" alt="Photo 8">
+                        </label>
+                    </div>
+                    <div class="photo-item">
+                        <input type="checkbox" id="photo9">
+                        <label for="photo9">
+                            <img src="sudoku_pics/hard3.png" alt="Photo 9">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <button id="solve" onclick="">Solve</button>
+        </div>
+
+        <div id="result">
+            <h2>Solution:</h2>
+            <button id="reset" onclick="">Reset</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
